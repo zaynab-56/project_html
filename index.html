@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>Game Studio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#gallery">Games</a>
+            <a href="#team">Team</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <h2>Welcome to Our Game Studio</h2>
+        <p>Waxaan dhisnaa ciyaaro xiiso badan oo Mobile iyo PC ah.</p>
+        <button class="btn-primary" onclick="window.location.href='#gallery'">Explore Games</button>
+    </section>
+
+    <section id="features">
+        <h2>Maxay Ciyaarahayagu Ku Kala Duwan Yihiin?</h2>
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3>🎮 Next-Gen Graphics</h3>
+                <p>Waxaan isticmaalnaa tignoolajiyada ugu dambaysa ee dhalisay muuqaalo dhab ah.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🌍 Open World</h3>
+                <p>Ciyaraha xorriyada leh iyo khariidado waaweyn oo aad si nabad ah u dhex mushaaxi karto.</p>
+            </div>
+            <div class="feature-box">
+                <h3>👥 Multiplayer</h3>
+                <p>La ciyaar asxaabtaada ama dadka kale meel kasta oo ay dunida ka joogaan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Game Gallery</h2>
+        <div class="gallery">
+            <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1556195332-95503f664ced?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyZHN8ZW58MHx8MHx8fDA%3D" alt="">
+                <div class="card-content">
+                    <h3>Adventure Quest</h3>
+                    <p>Action Adventure Game</p>
+                </div>
+            </div>
+            <div class="card">
+        
+                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80" alt="Speed Racer">
+                <div class="card-content">
+                    <h3>Speed Racer</h3>
+                    <p>Racing Game</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1723432015897-85d498eaf04e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHpvbWJpZSUyMGdhbWV8ZW58MHx8MHx8fDA%3D" alt="">
+                <div class="card-content">
+                    <h3>Zombie World</h3>
+                    <p>Survival Horror</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="team">
+        <h2>Development Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=300&h=300" alt="Ahmed">
+                <h3>Ahmed</h3>
+                <p>Game Developer</p>
+            </div>
+            <div class="member">
+        
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=300&h=300" alt="Amina">
+                <h3>Amina</h3>
+                <p>Game Designer</p>
+            </div>
+            <div class="member">
+        
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=300&h=300" alt="Mohamed">
+                <h3>Mohamed</h3>
+                <p>UI/UX Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <h2>Latest News</h2>
+        <div class="blog">
+            <h3>New Game Released</h3>
+            <p>Our newest adventure game is now available for download. Get ready for a whole new journey!</p>
+        </div>
+        <div class="blog">
+            <h3>Studio Update</h3>
+            <p>We are working on exciting multiplayer features and cross-play stability for all major consoles.</p>
+        </div>
+    </section>
+
+    <div class="newsletter-bg">
+        <h2>Ku Soo Biir Reerka!</h2>
+        <p>Is-qor si aad u hesho ogeysiisyada ciyaaraha dhowaan soo baxaya iyo hadiyado gaar ah.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Waad ku mahadsantahay is-qorista!');">
+            <input type="email" placeholder="Geli iimaylkaaga saxda ah" required>
+            <button type="submit">Is-qor</button>
+        </form>
+    </div>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="event.preventDefault(); alert('Farriintaada waa la diray!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>©️ 2026 Game Development Studio. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://discord.gg/epicgames" target="_blank">Discord</a>
+            <a href="https://www.youtube.com/@PlayStation" target="_blank">YouTube</a>
+            <a href="https://x.com/Xbox" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
